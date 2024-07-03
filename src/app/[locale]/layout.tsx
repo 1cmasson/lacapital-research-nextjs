@@ -9,6 +9,7 @@ import { Inter, Rubik, Space_Grotesk } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import { Header } from './components/Header'
 import './globals.css'
+import { Footer } from './components/Footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -73,8 +74,11 @@ export default function RootLayout({
               color='var(--primary)'
               showSpinner={false}
             />
-            <Header locale={locale} />
-            <main className='mx-auto max-w-screen-2xl'>{children}</main>
+              <Header locale={locale} />
+              <main className='mx-auto max-w-screen-2xl'>
+                {children}
+              </main>
+              <Footer/>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
