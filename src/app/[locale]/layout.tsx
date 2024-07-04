@@ -24,7 +24,7 @@ const space_grotesk = Space_Grotesk({
   variable: '--font-space-grotesk'
 })
 export const metadata: Metadata = {
-  title: 'Next Temp',
+  title: 'La Capital Research Center',
   description: 'create next app By Yahya Parvar!'
 }
 
@@ -43,7 +43,7 @@ export default function RootLayout({
       className={`${space_grotesk.variable} ${rubik.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-      <body>
+      <body className='bg-white'>
         <ThemeProvider
           enableSystem
           attribute='class'

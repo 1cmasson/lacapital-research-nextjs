@@ -78,15 +78,15 @@ export default function DashboardPage() {
       
       <HeroSection/>
       
-      <section className='flex flex-col bg-[url(/bubble-background.svg)] bg-contain bg-no-repeat bg-white items-center justify-center py-8'>
-        <div className="xl:container xl:mx-auto">
-          <div className=" flex flex-col md:flex-row items-strech justify-center">
-            <div className="md:w-3/5 relative">
-                <Image width={100} height={100} src="https://i.ibb.co/2Y2W5h2/florian-klauer-mk7-D-4-UCfmg-unsplash-1.png" alt="A typewriter" role="img" className="absolute inset-0 object-cover object-center w-full h-full hidden lg:block rounded" />
-                <Image width={100} height={100} src="https://i.ibb.co/PZRDh0s/florian-klauer-mk7-D-4-UCfmg-unsplash-1-1-1.png" alt="A typewriter" role="img" className="absolute inset-0 object-cover object-center w-full h-full lg:hidden rounded" />
-                <Image width={100} height={100} src="https://i.ibb.co/CsYRYtk/florian-klauer-mk7-D-4-UCfmg-unsplash-1-1.png" alt="A typewriter" role="img" className="object-cover object-center w-full h-full md:hidden rounded" />
+      <section className='flex flex-col  bg-contain bg-no-repeat bg-white items-center justify-center'>
+        <div className="xl:container xl:mx-auto after:content-[url(/bubbles-right.svg)] after:w-full  after:flex after:justify-end">
+          <div className=" flex before:content-[url(/bubbles-left.svg)] relative after:relative flex-col md:flex-row items-strech justify-center">
+            <div className="md:w-full after:content-[url(/big-blob.svg)] after:absolute after:-z-10  relative">
+                <Image width={493} height={341} src="/team.jpg" alt="A typewriter" role="img" className="absolute inset-0 object-contain w-full h-full hidden lg:block rounded" />
+                <Image width={493} height={341} src="/team.jpg" alt="A typewriter" role="img" className="absolute inset-0 object-contain object-center w-full h-full lg:hidden rounded" />
+                <Image width={493} height={341} src="/team.jpg" alt="A typewriter" role="img" className="object-cover object-center w-full h-full md:hidden rounded" />
             </div>
-            <div className="md:w-2/5 flex justify-center items-center -mt-14 md:-mt-0 md:-ml-12 lg:-ml-16 md:py-24 lg:py-36 relative z-10 mx-4 md:mx-0">
+            <div className="md:w-2/5  flex justify-center items-center -mt-10 md:-mt-0 md:-ml-12 lg:-ml-16 md:py-24 lg:py-36 relative z-10 mx-4 md:mx-0">
                 <div className="bg-blue-500 p-8 lg:p-10">
                   <p className="text-xl text-gray-100 font-extrabold leading-none lg:text-xl lg:leading-tight">
                       About us
@@ -105,9 +105,9 @@ export default function DashboardPage() {
       </section>
       <section id="contact" className='bg-white'>
         <svg className='max-w-full h-full -mb-2' width="1602" height="368" viewBox="0 0 1602 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M-111 16.1505L-6.48415 24.2257C98.0317 32.3009 307.063 47.8746 517.452 39.7994C726.484 32.3009 935.516 0 1144.55 0C1354.94 0 1563.97 32.3009 1668.48 47.8746L1773 64.0251V184H1668.48C1563.97 184 1354.94 184 1144.55 184C935.516 184 726.484 184 517.452 184C307.063 184 98.0317 184 -6.48415 184H-111V16.1505Z" fill="#254085"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1773 108.15L1668.48 116.226C1563.97 124.301 1354.94 139.875 1144.55 131.799C935.516 124.301 726.484 92 517.452 92C307.063 92 98.0318 124.301 -6.48406 139.875L-111 156.025V276H-6.48406C98.0318 276 307.063 276 517.452 276C726.484 276 935.516 276 1144.55 276C1354.94 276 1563.97 276 1668.48 276H1773V108.15Z" fill="#2F73F7"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M-111 200.15L-6.48416 208.226C98.0317 216.301 307.063 231.875 517.452 223.799C726.484 216.301 935.516 184 1144.55 184C1354.94 184 1563.97 216.301 1668.48 231.875L1773 248.025V368H1668.48C1563.97 368 1354.94 368 1144.55 368C935.516 368 726.484 368 517.452 368C307.063 368 98.0317 368 -6.48416 368H-111V200.15Z" fill="#6197FF"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M-111 16.1505L-6.48415 24.2257C98.0317 32.3009 307.063 47.8746 517.452 39.7994C726.484 32.3009 935.516 0 1144.55 0C1354.94 0 1563.97 32.3009 1668.48 47.8746L1773 64.0251V184H1668.48C1563.97 184 1354.94 184 1144.55 184C935.516 184 726.484 184 517.452 184C307.063 184 98.0317 184 -6.48415 184H-111V16.1505Z" fill="#254085"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M1773 108.15L1668.48 116.226C1563.97 124.301 1354.94 139.875 1144.55 131.799C935.516 124.301 726.484 92 517.452 92C307.063 92 98.0318 124.301 -6.48406 139.875L-111 156.025V276H-6.48406C98.0318 276 307.063 276 517.452 276C726.484 276 935.516 276 1144.55 276C1354.94 276 1563.97 276 1668.48 276H1773V108.15Z" fill="#2F73F7"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M-111 200.15L-6.48416 208.226C98.0317 216.301 307.063 231.875 517.452 223.799C726.484 216.301 935.516 184 1144.55 184C1354.94 184 1563.97 216.301 1668.48 231.875L1773 248.025V368H1668.48C1563.97 368 1354.94 368 1144.55 368C935.516 368 726.484 368 517.452 368C307.063 368 98.0317 368 -6.48416 368H-111V200.15Z" fill="#6197FF"/>
         </svg>
         <div className='bg-[#6197FF]'>
           <div className="py-16 px-10 md:px-52 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -136,6 +136,9 @@ export default function DashboardPage() {
         </svg>
 
         
+      </section>
+      <section className='bg-blue-800 h-96 -mt-16'>
+
       </section>
       
 
