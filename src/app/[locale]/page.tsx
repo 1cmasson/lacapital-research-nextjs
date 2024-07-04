@@ -86,13 +86,13 @@ export default function DashboardPage() {
                 <Image width={493} height={341} src="/team.jpg" alt="A typewriter" role="img" className="absolute inset-0 object-contain object-center w-full h-full lg:hidden rounded" />
                 <Image width={493} height={341} src="/team.jpg" alt="A typewriter" role="img" className="object-cover object-center w-full h-full md:hidden rounded" />
             </div>
-            <div className="md:w-2/5  flex justify-center items-center -mt-10 md:-mt-0 md:-ml-12 lg:-ml-16 md:py-24 lg:py-36 relative z-10 mx-4 md:mx-0">
-                <div className="bg-blue-500 p-8 lg:p-10">
-                  <p className="text-xl text-gray-100 font-extrabold leading-none lg:text-xl lg:leading-tight">
+            <div className="md:w-full  flex justify-center items-center -mt-10 md:-mt-0 md:py-24 lg:py-36 relative z-10 mx-4 md:mx-0">
+                <div className="p-8 lg:p-10">
+                  <p className="text-2xl text-red-600 font-extrabold leading-none lg:text-3xl lg:leading-tight">
                       About us
                   </p>
-                  <p className="text-2xl md:text-4xl lg:text-5xl font-semibold lg:font-bold md:leading-10 text-white mt-6 md:mt-4 lg:mt-8">Here is all you need to know about us</p>
-                  <p className="text-base leading-normal text-white mt-4 lg:mt-6">
+                  <p className="text-2xl md:text-4xl lg:text-5xl font-semibold lg:font-bold md:leading-10 text-blue-800 mt-6 md:mt-4 lg:mt-8">Here is all you need to know about us</p>
+                  <p className="text-base leading-normal text-blue-800 mt-4 lg:mt-6">
                       Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening believe but proceed pretend mrs.
                       <br className="lg:hidden" />
                       <br className="lg:hidden" />
