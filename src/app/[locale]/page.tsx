@@ -79,7 +79,7 @@ export default function DashboardPage() {
       <HeroSection/>
       
       <section className='flex flex-col  bg-contain bg-no-repeat bg-white items-center justify-center'>
-        <div className="xl:container xl:mx-auto after:content-[url(/bubbles-right.svg)] after:-mt-20 after:pb-12 after:w-full  after:flex after:justify-end">
+        <div className="xl:container xl:mx-auto after:content-[url(/bubbles-right.svg)] after:lg:-mt-20 after:pt-8 after:pb-12 after:w-full  after:flex after:justify-end">
           <div className=" flex before:content-[url(/bubbles-left.svg)] relative flex-col md:flex-row items-strech justify-center">
             <div className="md:w-full relative">
                 <Image width={493} height={341} src="/team.jpg" alt="A typewriter" role="img" className="absolute inset-0 object-contain w-full h-full hidden lg:block rounded" />
