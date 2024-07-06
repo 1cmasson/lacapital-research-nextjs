@@ -90,7 +90,7 @@ export const ContactSection = () => {
             </div>
             
             <div className="lg:w-80 lg:flex-none  before:overflow-hidden before:top-0 before:opacity-40 before:content-[url(/logo-background.svg)] before:absolute before:-z-10">
-            <iframe title="Google Maps location of Double R Vending"className="rounded-3xl w-full mb-9 h-48 shadow border-0 block" src="https://www.google.com/maps/embed?z-14&pb=!1m14!1m8!1m3!1d7355176.85781452!2d-80.262153!3d25.823528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0bbadef6bbb%3A0x3dd5242b862d2931!2s25%20E%209th%20Ct%2C%20Hialeah%2C%20FL%2033010!5e0!3m2!1sen!2sus!4v1686945514638!5m2!1sen!2sus" width="300" height="300" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+            <iframe title="Google Maps location of Double R Vending"className="rounded-3xl w-full mb-9 h-48 shadow border-0 block" src="https://www.google.com/maps/embed?z-14&pb=!1m14!1m8!1m3!1d7355176.85781452!2d-80.262153!3d25.823528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0bbadef6bbb%3A0x3dd5242b862d2931!2s25%20E%209th%20Ct%2C%20Hialeah%2C%20FL%2033010!5e0!3m2!1sen!2sus!4v1686945514638!5m2!1sen!2sus" width="300" height="300" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
             <dl className="mt-10 space-y-4 text-base leading-7 text-white">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
