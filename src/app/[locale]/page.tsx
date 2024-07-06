@@ -5,6 +5,7 @@ import Button from './components/Button'
 import HeroSection from './sections/HeroSection'
 import { CheckIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import { ContactSection } from './sections/ContactSection'
 
 const frequencies = [
   { value: 'monthly', label: 'Monthly', priceSuffix: '/month' },
@@ -88,7 +89,7 @@ export default function DashboardPage() {
             </div>
             <div className="md:w-full  flex justify-center items-center -mt-10 md:-mt-0 md:py-24 lg:py-36 relative z-10 mx-4 md:mx-0">
                 <div className="p-8 lg:p-10">
-                  <p className="text-2xl text-red-600 font-extrabold leading-none lg:text-3xl lg:leading-tight">
+                  <p className="text-2xl text-red-500 font-extrabold leading-none lg:text-3xl lg:leading-tight">
                       About us
                   </p>
                   <p className="text-2xl md:text-4xl lg:text-5xl font-semibold lg:font-bold md:leading-10 text-blue-800 mt-6 md:mt-4 lg:mt-8">Here is all you need to know about us</p>
@@ -110,15 +111,16 @@ export default function DashboardPage() {
           <path fillRule="evenodd" clipRule="evenodd" d="M-111 200.15L-6.48416 208.226C98.0317 216.301 307.063 231.875 517.452 223.799C726.484 216.301 935.516 184 1144.55 184C1354.94 184 1563.97 216.301 1668.48 231.875L1773 248.025V368H1668.48C1563.97 368 1354.94 368 1144.55 368C935.516 368 726.484 368 517.452 368C307.063 368 98.0317 368 -6.48416 368H-111V200.15Z" fill="#6197FF"/>
         </svg>
         <div className='bg-[#6197FF]'>
+          <h2 className='pt-8 text-5xl font-bold text-gray-100 w-full flex justify-center'>Benefits</h2>
           <div className="py-16 px-10 md:px-52 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {tiers.map((tier) => (
               <div
                 key={tier.id}
-                className='ring-gray-200 rounded-3xl p-8 ring-1 xl:p-10'
+                className='ring-gray-200 bg-gray-100 shadow-lg rounded-3xl p-8 ring-1 xl:p-10'
               >
                 <h3
                   id={tier.id}
-                  className='text-gray-900 text-lg font-semibold leading-8'
+                  className='text-blue-700 text-lg font-semibold leading-8'
                 >
                   {tier.name}
                 </h3>
@@ -129,17 +131,15 @@ export default function DashboardPage() {
             ))}
           </div>
         </div>
-        <svg className='max-w-full h-full -mt-2' width="1563" height="368" viewBox="0 0 1563 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1563 351.85L1476.29 343.774C1389.58 335.699 1216.17 320.125 1041.62 328.201C868.208 335.699 694.792 368 521.375 368C346.833 368 173.416 335.699 86.7083 320.125L8.24928e-05 303.975V184H86.7083C173.416 184 346.833 184 521.375 184C694.792 184 868.208 184 1041.62 184C1216.17 184 1389.58 184 1476.29 184H1563V351.85Z" fill="#254085"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 259.85L86.7082 251.774C173.416 243.699 346.833 228.125 521.375 236.201C694.792 243.699 868.208 276 1041.62 276C1216.17 276 1389.58 243.699 1476.29 228.125L1563 211.975V92H1476.29C1389.58 92 1216.17 92 1041.62 92C868.208 92 694.792 92 521.375 92C346.833 92 173.416 92 86.7082 92H0V259.85Z" fill="#2F73F7"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1563 167.85L1476.29 159.774C1389.58 151.699 1216.17 136.125 1041.62 144.201C868.208 151.699 694.792 184 521.375 184C346.833 184 173.416 151.699 86.7082 136.125L-3.05176e-05 119.975V-6.19888e-06H86.7082C173.416 -6.19888e-06 346.833 -6.19888e-06 521.375 -6.19888e-06C694.792 -6.19888e-06 868.208 -6.19888e-06 1041.62 -6.19888e-06C1216.17 -6.19888e-06 1389.58 -6.19888e-06 1476.29 -6.19888e-06H1563V167.85Z" fill="#6197FF"/>
+        <svg className='max-w-full relative z-20 h-full -mt-2' width="1563" height="368" viewBox="0 0 1563 368" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fillRule="evenodd" clipRule="evenodd" d="M1563 351.85L1476.29 343.774C1389.58 335.699 1216.17 320.125 1041.62 328.201C868.208 335.699 694.792 368 521.375 368C346.833 368 173.416 335.699 86.7083 320.125L8.24928e-05 303.975V184H86.7083C173.416 184 346.833 184 521.375 184C694.792 184 868.208 184 1041.62 184C1216.17 184 1389.58 184 1476.29 184H1563V351.85Z" fill="#254085"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M0 259.85L86.7082 251.774C173.416 243.699 346.833 228.125 521.375 236.201C694.792 243.699 868.208 276 1041.62 276C1216.17 276 1389.58 243.699 1476.29 228.125L1563 211.975V92H1476.29C1389.58 92 1216.17 92 1041.62 92C868.208 92 694.792 92 521.375 92C346.833 92 173.416 92 86.7082 92H0V259.85Z" fill="#2F73F7"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M1563 167.85L1476.29 159.774C1389.58 151.699 1216.17 136.125 1041.62 144.201C868.208 151.699 694.792 184 521.375 184C346.833 184 173.416 151.699 86.7082 136.125L-3.05176e-05 119.975V-6.19888e-06H86.7082C173.416 -6.19888e-06 346.833 -6.19888e-06 521.375 -6.19888e-06C694.792 -6.19888e-06 868.208 -6.19888e-06 1041.62 -6.19888e-06C1216.17 -6.19888e-06 1389.58 -6.19888e-06 1476.29 -6.19888e-06H1563V167.85Z" fill="#6197FF"/>
         </svg>
 
         
       </section>
-      <section className='bg-blue-800 h-96 -mt-16'>
-
-      </section>
+      <ContactSection/>
       
 
     </div>
