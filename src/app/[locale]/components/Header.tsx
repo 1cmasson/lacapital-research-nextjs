@@ -53,7 +53,7 @@ export const Header: FC<Props> = ({ locale }) => {
   return (
     <header className='bg-white mt-0'>
       <Banner/>
-      <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
+      <nav className="mx-auto shadow-md flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
         <a href="#" className=" p-1.5">
           <span className="sr-only">Your Company</span>          
           <LogoIcon/>          

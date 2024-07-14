@@ -5,7 +5,7 @@ export default function HeroSection() {
   const t = useTranslations("")
   return (
     <>
-    <section className="relative  pb-10 overflow-hidden bg-blue-800 bg-no-repeat bg-cover bg-[url(/mobile-hero-background.svg)] lg:bg-[url(/Vector.svg)] object-cover">
+    <section className="relative  pb-10 overflow-hidden bg-blue-800 bg-no-repeat bg-cover bg-[url(/mobile-hero-background.png)] lg:bg-[url(/desktop-hero-background.png)] object-cover">
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex  lg:px-8 lg:py-12">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
           <h1 className="mt-10 z-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -17,7 +17,7 @@ export default function HeroSection() {
           <div className="mt-10 z-10 flex items-center gap-x-6">
             <a
               href="#contact"
-              className="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-red-600 shadow-md px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-none"
             >
               {t('See_If_You_Qualify')}
             </a>
