@@ -5,23 +5,16 @@ import {
   NextIntlClientProvider,
   useMessages
 } from 'next-intl'
-import { Inter, Rubik, Space_Grotesk } from 'next/font/google'
+import { Work_Sans } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import { Header } from './components/Header'
 import './globals.css'
 import { Footer } from './components/Footer'
 
-const inter = Inter({
+const work_sans = Work_Sans({
   subsets: ['latin'],
-  variable: '--inter'
-})
-const rubik = Rubik({
-  subsets: ['arabic'],
-  variable: '--rubik'
-})
-const space_grotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space-grotesk'
+  weight: "500",
+  variable: '--work_sans'
 })
 export const metadata: Metadata = {
   title: 'La Capital Research Center',
@@ -39,8 +32,8 @@ export default function RootLayout({
   return (
     <html
       lang={locale}
-      dir={locale === 'ar' || locale == 'fa' ? 'rtl' : 'ltr'}
-      className={`${space_grotesk.variable} ${rubik.variable} scroll-smooth`}
+      dir="ltr"
+      className={`${work_sans.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <body className='bg-white'>
@@ -71,7 +64,7 @@ export default function RootLayout({
               easing='ease'
               speed={200}
               shadow='0 0 10px #2299DD,0 0 5px #2299DD'
-              color='var(--primary)'
+              color=''
               showSpinner={false}
             />
               <Header locale={locale} />

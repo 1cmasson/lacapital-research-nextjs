@@ -13,14 +13,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
 import Hamburger from 'hamburger-react'
 
-const navigation = [
-  { name: 'Home', href: '#contact' },
-  { name: 'About Us', href: 'https://google.com' },
-  { name: 'Laboratory', href: '#' },
-  { name: 'Contact Us', href: '#' },
-  
-  
-]
+
+
+
 
 interface Props {
   locale: string,
@@ -36,6 +31,15 @@ export const Header: FC<Props> = ({ locale }) => {
     
   })
 
+  const navigation = [
+    { name: t('Home'), href: '#' },
+    { name: t('About_Us'), href: '#about' },
+    { name: t('Benefits'), href: '#benefits' },
+    { name: t('See_If_You_Qualify'), href:'#contact' }
+    
+    
+  ]
+
   useEffect(() => {
     if(mobileMenuOpen){
       document.body.style.overflow = 'hidden'
@@ -45,6 +49,7 @@ export const Header: FC<Props> = ({ locale }) => {
     
   },[mobileMenuOpen])
 
+  
   return (
     <header className='bg-white mt-0'>
       <Banner/>
@@ -63,43 +68,34 @@ export const Header: FC<Props> = ({ locale }) => {
             <Hamburger direction="left" size={24}/>
           </button>
         </div>
-        <div className="hidden lg:flex pt-10 lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+            <a key={item.name} href={item.href} className="text-sm font-semibold items-center flex text-gray-900">
               {item.name}
             </a>
           ))}
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            See If You Qualify <span aria-hidden="true">&rarr;</span>
-          </a>
+          {/* <ThemeSwitch/> */}
+          <LangSwitcher/>
         </div>
       </nav>
       <div className="lg:hidden">
         
           <div className={menuClasses}>
-            <div className="mt-28 flow-root">
+            <div className="mt-20 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold  text-gray-900 hover:bg-gray-50"
                       onClick={() => setMobileMenuOpen(open => !open )}
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    See If You Qualify
-                  </a>
-                </div>
+                <LangSwitcher/>
               </div>
             </div>
           </div>

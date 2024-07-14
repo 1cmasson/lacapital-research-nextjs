@@ -12,8 +12,8 @@ import { FaPhone } from "react-icons/fa";
 
 const items = [
     {
-        link:"tel: +1 305 901-1191",
-        text: "(305) 901-1191",
+        link:"tel: +1 786 254-7666",
+        text: "(786) 254-7666",
         icon: <FaPhone className='w-6 h-6'/>
     },
     {
@@ -39,16 +39,16 @@ export const Banner = () => {
             <div className=" flex bg-red-600 justify-center">
                 <div className="align-items inline-block lg:flex = text-center self-center md:flex-no-wrap px-6 py-2.5">
                     <div className="text-white flex justify-center my-1.5">
-                        <a className=" hover:text-hover" href="tel: +1 305 901-1191">
+                        <a className=" hover:text-hover" href={items[0].link}>
                             <FaPhone className='w-8 h-8'/>
                         </a>
                         <span className="text-white mx-12">|</span>
-                        <a className=" hover:text-hover" href="https://www.instagram.com/lifeaccordingtotodd/?hl=en">
+                        <a className=" hover:text-hover" href={items[1].link}>
                             <MdEmail className='w-8 h-8'/>
 
                         </a>
                         <span className="text-white mx-12">|</span>
-                        <a className=" hover:text-hover" href="https://www.youtube.com/channel/UCBb9T0yL77zmLOQMhg9njNw">
+                        <a className=" hover:text-hover" href={items[2].link}>
                             <FaFacebook className='w-8 h-8'/>
                         </a>
                     </div>

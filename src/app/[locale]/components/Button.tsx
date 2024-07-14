@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode
+  children?: React.ReactNode
   variant?: 'primary' | 'secondary'
   size?: 'small' | 'medium' | 'large'
   rounded?: boolean
@@ -22,12 +22,13 @@ const Button: React.FC<ButtonProps> = ({
   }
 
   const baseStyles = `rounded focus:outline-none focus:shadow-outline ${rounded ? 'rounded-full' : ''}`
-  const variantStyles = {
-    primary: 'bg-button text-button-text',
-    secondary: 'bg-button-secondary text-secondary ring-secondary ring-2'
-  }
+  // const variantStyles = {
+  //   primary: 'bg-button text-button-text',
+  //   secondary: 'bg-button-secondary text-secondary ring-secondary ring-2'
+  // }
+  // ${variantStyles[variant]}
 
-  const buttonStyles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`
+  const buttonStyles = `${baseStyles} ${sizeStyles[size]}  ${className}`
 
   return (
     <button className={buttonStyles} {...props}>

@@ -65,7 +65,7 @@ export default function ThemeSwitch() {
                   }}
                   className={`block w-full px-4 py-2 text-left text-sm hover:bg-dropdownHover ${
                     themeItem === theme
-                      ? 'bg-selected text-primary hover:bg-selected'
+                      ? ' text-primary '
                       : 'text-secondary'
                   }`}
                 >
