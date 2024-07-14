@@ -25,7 +25,7 @@ export const Header: FC<Props> = ({ locale }) => {
 
   const t = useTranslations('')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const menuClasses = classNames('fixed transition-[width]  inset-y-0  right-0 z-1 overflow-y-auto bg-white  sm:max-w-sm sm:ring-1 sm:ring-gray-900/10',{
+  const menuClasses = classNames('fixed transition-[width] z-10 inset-y-0  right-0 z-1 overflow-y-auto bg-white  sm:max-w-sm sm:ring-1 sm:ring-gray-900/10',{
     'w-3/5 p-6 border-l-4 border-blue-500': mobileMenuOpen,
     'w-0': !mobileMenuOpen
     
