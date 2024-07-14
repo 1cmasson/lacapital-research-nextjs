@@ -61,7 +61,7 @@ export const Header: FC<Props> = ({ locale }) => {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m2.5 z-10 inline-flex items-center justify-center rounded-md text-gray-700"
+            className="-m2.5 z-20 inline-flex items-center justify-center rounded-md text-gray-700"
             onClick={() => setMobileMenuOpen(open => !open )}
           >
             <span className="sr-only">Open main menu</span>
