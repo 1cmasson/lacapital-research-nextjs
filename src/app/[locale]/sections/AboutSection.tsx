@@ -9,8 +9,8 @@ export default function AboutSection() {
             <div className="xl:container xl:mx-auto after:content-[url(/bubbles-right.svg)] after:lg:-mt-20 after:pt-8 after:pb-12 after:w-full  after:flex after:justify-end">
                 <div className=" flex before:content-[url(/bubbles-left.svg)] relative flex-col md:flex-row items-strech justify-center">
                     <div className="md:w-full relative">
-                        <Image width={893} height={641} src="/desktop-team.png" alt="The team at La Capital Research Center" role="img" className="absolute inset-0 object-contain w-full h-full hidden lg:block " />
-                        <Image width={493} height={341} src="/mobile-team.png" alt="The team at La Capital Research Center" role="img" className="absolute inset-0 object-contain object-center w-full h-full lg:hidden" />
+                        <Image width={693} height={841} src="/desktop-team.png" alt="The team at La Capital Research Center" role="img" className="absolute inset-0 object-contain w-full h-full hidden lg:block " />
+                        <Image width={493} height={841} src="/mobile-team.png" alt="The team at La Capital Research Center" role="img" className="absolute inset-0 object-contain object-center w-full h-full lg:hidden" />
                     </div>
                     <div className="md:w-full  flex justify-center items-center -mt-10 md:-mt-0 md:py-24 lg:py-36 relative z-10 mx-4 md:mx-0">
                         <div className="p-8 lg:p-10">

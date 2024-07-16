@@ -17,8 +17,8 @@ const items = [
         icon: <FaPhone className='w-6 h-6'/>
     },
     {
-        link:"mailto:info@lacapitalmedicalcenter.com",
-        text: "info@lacapitalmedicalcenter.com",
+        link:"mailto:info@lacapitalresearch.com",
+        text: "info@lacapitalresearch.com",
         icon: <MdEmail className='w-6 h-6'/>
     },
     {

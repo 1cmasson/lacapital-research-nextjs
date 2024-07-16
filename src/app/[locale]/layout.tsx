@@ -18,7 +18,7 @@ const work_sans = Work_Sans({
 })
 export const metadata: Metadata = {
   title: 'La Capital Research Center',
-  description: 'create next app By Yahya Parvar!'
+  description: 'We are a research center located in the city of Hialeah, improving the health of our community through cutting edge research. Apply with us to get compensated and contribute to health science.'
 }
 
 export default function RootLayout({

@@ -58,7 +58,7 @@ export const Header: FC<Props> = ({ locale }) => {
           <span className="sr-only">Your Company</span>          
           <LogoIcon/>          
         </a>
-        <div className="flex lg:hidden">
+        <div className="flex md:hidden">
           <button
             type="button"
             className="-m2.5 z-20 inline-flex items-center justify-center rounded-md text-gray-700"

@@ -12,8 +12,8 @@ export const Footer = () => {
       { name: t('See_If_You_Qualify'), href: '#contact' },
     ],
     contact:[
-      { name:"info@lacapitalmedicalcenter.com", href:"#" },
-      { name:"(786) 909-3661", href:"#" }
+      { name:"info@lacapitalresearch.com", href:"mailto:info@lacapitalresearch.com" },
+      { name:"(786) 254-7666", href:"tel: +1 786 254-7666" }
     ],
     social: [
       {
@@ -77,7 +77,7 @@ export const Footer = () => {
                   </div>
                   <div>
                     <div className="text-red-500 text-sm  font-semibold">Email</div> 
-                    <a className="hover:text-red-600 hover:underline" href="mailto:doublervendingco@bellsouth.net">doublervendingco@bellsouth.net</a> 
+                    <a className="hover:text-red-600 hover:underline" href="mailto:info@lacapitalresearch.com">info@lacapitalresearch.com</a> 
                   </div>
                 </div>          
               </address>
