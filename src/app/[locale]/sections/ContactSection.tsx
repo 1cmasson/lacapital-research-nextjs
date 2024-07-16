@@ -7,7 +7,7 @@ export const ContactSection = () => {
       <section  className="relative overflow-hidden bg-blue-900 -mt-14 z-10  px-4 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto  max-w-xl lg:max-w-4xl">
           <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-            <div className="flex flex-col">
+            <div className="flex py-10 flex-col">
             <h2 id="contact" className="text-4xl font-bold tracking-tight text-gray-100">{t("Apply_With_Us")}</h2>
             <p className="mt-2 mb-8 text-lg leading-8 text-gray-100">
               {t("Apply_With_Us_Description")}
@@ -125,28 +125,6 @@ export const ContactSection = () => {
                 </dd>
               </div>
             </dl>
-              {/* <figure className="mt-10">
-                <blockquote className="text-lg font-semibold leading-8 text-gray-100">
-                  <p>
-                    “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-                    molestiae. Numquam corrupti in laborum sed rerum et corporis.”
-                  </p>
-                </blockquote>
-                <figcaption className="mt-10 flex gap-x-6">
-                  <Image
-                    height={500} 
-                    width={500}
-                    src="/profile.png"
-                    alt=""
-                    className="h-28 w-28 flex-none rounded-full bg-gray-50"
-                  />
-                  <div className="flex flex-col justify-center">
-                    <div className="text-base font-semibold text-gray-200">Ruben & Isis Masson</div>
-                    <div className="text-sm leading-6 text-gray-200">Owners of</div>
-                    <WhiteLogoIcon className="h-20 w-48"/>
-                  </div>
-                </figcaption>
-              </figure> */}
             </div>
           </div>
         </div>
