@@ -53,7 +53,6 @@ export const Footer = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <LogoIcon/>
-            
           </div>
           <div className="mt-16 grid gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-3 md:gap-8">
@@ -108,7 +107,6 @@ export const Footer = () => {
                   </ul>
                 </div>
                 <LangSwitcher/>
-                
               </div>
             </div>
           </div>

@@ -1,14 +1,8 @@
-import Image from 'next/image';
 import { useBreakpoint } from "../../hooks/use-breakpoint"
 import { useEffect } from "react"
-import { AtSymbolIcon } from '@heroicons/react/24/outline';
 import { FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
-
-
-
-
 
 const items = [
     {

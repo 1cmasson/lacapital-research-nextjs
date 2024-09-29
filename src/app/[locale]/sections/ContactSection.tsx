@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 export const ContactSection = () => {
     const t = useTranslations("")
     return (
-      <section  className="relative overflow-hidden bg-blue-900 -mt-14 z-10  px-4 py-24 sm:py-32 lg:px-8">
+      <section  className=" container relative overflow-hidden bg-blue-900 -mt-14 xl:-mt-16 z-10  px-4 py-24 sm:py-32 lg:px-8">
         <div className="mx-auto  max-w-xl lg:max-w-4xl">
           <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
             <div className="flex py-10 flex-col">

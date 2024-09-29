@@ -14,23 +14,10 @@ export default function DashboardPage() {
   const t = useTranslations('')
   return (
     <>
-      {/* <video 
-          className='h-full w-full object-cover fixed top-0 -z-10' 
-          id="background-video" 
-          autoPlay
-          loop 
-          muted 
-        >
-          <source src="/research-lab.mp4" type="video/mp4"/>
-        </video> */}
-      
       <HeroSection/>
-      
       <AboutSection/>
       <BenefitsSection/>
       <ContactSection/>
-      
-
     </>
   )
 }

@@ -5,14 +5,14 @@ import React from "react";
 export default function AboutSection() {
     const t = useTranslations("")
     return (
-        <section id="about" className='flex flex-col  bg-contain bg-no-repeat bg-white items-center justify-center'>
+        <section id="about" className='flex container flex-col py-4 -mt-2 bg-contain bg-no-repeat bg-white items-center justify-center'>
             <div className="xl:container xl:mx-auto after:content-[url(/bubbles-right.svg)] after:lg:-mt-20 after:pt-8 after:pb-12 after:w-full  after:flex after:justify-end">
                 <div className=" flex before:content-[url(/bubbles-left.svg)] relative flex-col md:flex-row items-strech justify-center">
-                    <div className="md:w-full relative">
-                        <Image width={693} height={841} src="/desktop-team.png" alt="The team at La Capital Research Center" role="img" className="absolute inset-0 object-contain w-full h-full hidden lg:block " />
-                        <Image width={493} height={841} src="/mobile-team.png" alt="The team at La Capital Research Center" role="img" className="absolute inset-0 object-contain object-center w-full h-full lg:hidden" />
+                    <div className="md:w-full relative md:py-24 lg:py-36 flex items-center">
+                        <Image width={693} height={841} src="/desktop-team.webp" alt="The team at La Capital Research Center" role="img" className=" object-contain w-full h-96 hidden lg:block "/>
+                        <Image width={493} height={841} src="/desktop-team.webp" alt="The team at La Capital Research Center" role="img" className=" object-contain object-center w-full h-full lg:hidden py-16" />
                     </div>
-                    <div className="md:w-full  flex justify-center items-center -mt-10 md:-mt-0 md:py-24 lg:py-36 relative z-10 mx-4 md:mx-0">
+                    <div className="md:w-full flex justify-center items-center -mt-10 md:-mt-0 md:py-24 lg:py-36 relative z-10 mx-4 md:mx-0">
                         <div className="p-8 lg:p-10">
                         <p className="text-2xl text-red-500 font-extrabold leading-none lg:text-3xl lg:leading-tight">
                             {t('About_Us')}

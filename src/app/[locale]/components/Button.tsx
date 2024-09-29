@@ -22,12 +22,7 @@ const Button: React.FC<ButtonProps> = ({
   }
 
   const baseStyles = `rounded focus:outline-none focus:shadow-outline ${rounded ? 'rounded-full' : ''}`
-  // const variantStyles = {
-  //   primary: 'bg-button text-button-text',
-  //   secondary: 'bg-button-secondary text-secondary ring-secondary ring-2'
-  // }
-  // ${variantStyles[variant]}
-
+  
   const buttonStyles = `${baseStyles} ${sizeStyles[size]}  ${className}`
 
   return (

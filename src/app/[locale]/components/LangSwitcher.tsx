@@ -16,14 +16,13 @@ const LangSwitcher: React.FC = () => {
     icon:string
     flag:string
   }
+  const [isOptionsExpanded, setIsOptionsExpanded] = useState(false)
   const pathname = usePathname()
   const urlSegments = useSelectedLayoutSegments()
-
-  const [isOptionsExpanded, setIsOptionsExpanded] = useState(false)
+  
   const options: Option[] = [
     { country: 'English', code: 'en' , icon:'/us.png', flag:'US'}, // Native name is the same
     { country: 'Español', code: 'es', icon:'/es.png', flag:'Spanish' }
-    
   ]
 
   return (

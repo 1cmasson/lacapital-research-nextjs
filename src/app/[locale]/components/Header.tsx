@@ -1,21 +1,12 @@
 'use client'
-import { Link } from '@/src/navigation'
 import { useTranslations } from 'next-intl'
 import { FC, useEffect } from 'react'
-import GithubIcon from '../../icons/github'
 import LogoIcon from '../../icons/logo'
 import LangSwitcher from './LangSwitcher'
-import ThemeSwitch from './ThemeSwitch'
 import { Banner } from './Banner'
 import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
 import Hamburger from 'hamburger-react'
-
-
-
-
 
 interface Props {
   locale: string,
@@ -36,11 +27,10 @@ export const Header: FC<Props> = ({ locale }) => {
     { name: t('About_Us'), href: '#about' },
     { name: t('Benefits'), href: '#benefits' },
     { name: t('See_If_You_Qualify'), href:'#contact' }
-    
-    
   ]
 
   useEffect(() => {
+    
     if(mobileMenuOpen){
       document.body.style.overflow = 'hidden'
     } else{
@@ -48,12 +38,11 @@ export const Header: FC<Props> = ({ locale }) => {
     }
     
   },[mobileMenuOpen])
-
   
   return (
     <header className='bg-white mt-0'>
       <Banner/>
-      <nav className="mx-auto shadow-md flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
         <a href="#" className=" p-1.5">
           <span className="sr-only">Your Company</span>          
           <LogoIcon/>          
@@ -79,7 +68,6 @@ export const Header: FC<Props> = ({ locale }) => {
         </div>
       </nav>
       <div className="lg:hidden">
-        
           <div className={menuClasses}>
             <div className="mt-20 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
@@ -99,10 +87,7 @@ export const Header: FC<Props> = ({ locale }) => {
               </div>
             </div>
           </div>
-       
       </div>
-      
-    </header>
-    
+    </header>    
   )
 }
